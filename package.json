@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "testone": "mocha '/Users/viktoriiatverezovska/Documents/VSCode/AutomationTest1/Test/firstSuperTest.spec.js'",
+    "testtwo": "mocha '/Users/viktoriiatverezovska/Documents/VSCode/AutomationTest1/Test/secondSuperTest.spec.js'",
+    "testthree": "mocha '/Users/viktoriiatverezovska/Documents/VSCode/AutomationTest1/Test/thirdSuperTest.spec.js'",
+    "testfour": "mocha '/Users/viktoriiatverezovska/Documents/VSCode/AutomationTest1/Test/forthSuperTest.spec.js'",
+    "testfive": "mocha '/Users/viktoriiatverezovska/Documents/VSCode/AutomationTest1/Test/fifthServerTest.spec.js'"
+   
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/ViktoriiaTverezovska/AutomationTest1/issues"
   },
-  "homepage": "https://github.com/ViktoriiaTverezovska/AutomationTest1#readme"
+  "homepage": "https://github.com/ViktoriiaTverezovska/AutomationTest1#readme",
+  "devDependencies": {
+    "mocha": "^9.2.2"
+  },
+  "dependencies": {
+    "chai": "^4.3.6",
+    "express": "^4.17.3",
+    "nock": "^13.2.4",
+    "supertest": "^6.2.2"
+  }
 }
