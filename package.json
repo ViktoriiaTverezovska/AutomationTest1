@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "testone": "mocha '/Users/viktoriiatverezovska/Documents/VSCode/AutomationTest1/Test/firstSuperTest.spec.js'",
-    "testtwo": "mocha '/Users/viktoriiatverezovska/Documents/VSCode/AutomationTest1/Test/secondSuperTest.spec.js'",
-    "testthree": "mocha '/Users/viktoriiatverezovska/Documents/VSCode/AutomationTest1/Test/thirdSuperTest.spec.js'",
-    "testfour": "mocha '/Users/viktoriiatverezovska/Documents/VSCode/AutomationTest1/Test/forthSuperTest.spec.js'",
-    "testfive": "mocha '/Users/viktoriiatverezovska/Documents/VSCode/AutomationTest1/Test/fifthServerTest.spec.js'"
-   
+    "testone": "mocha 'Test/firstSuperTest.spec.js'",
+    "testtwo": "mocha 'Test/secondSuperTest.spec.js'",
+    "testthree": "mocha 'Test/thirdSuperTest.spec.js'",
+    "testfour": "mocha 'Test/forthSuperTest.spec.js'",
+    "testfive": "mocha 'Test/fifthServerTest.spec.js'",
+    "gettest1": "mocha Test/gettest1.spec.js",
+    "gettest2": "mocha Test/gettest2.spec.js"
   },
   "repository": {
     "type": "git",
