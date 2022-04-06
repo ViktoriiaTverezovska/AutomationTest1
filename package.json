@@ -9,8 +9,8 @@
     "testthree": "mocha 'Test/thirdSuperTest.spec.js'",
     "testfour": "mocha 'Test/forthSuperTest.spec.js'",
     "testfive": "mocha 'Test/fifthServerTest.spec.js'",
-    "gettest1": "mocha Test/gettest1.spec.js",
-    "gettest2": "mocha Test/gettest2.spec.js"
+    "gettest1": "mocha Test/get_country_postal_code.spec.js",
+    "gettest2": "mocha Test/get_country_state_city.spec.js"
   },
   "repository": {
     "type": "git",
