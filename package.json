@@ -4,13 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "testone": "mocha 'Test/firstSuperTest.spec.js'",
-    "testtwo": "mocha 'Test/secondSuperTest.spec.js'",
-    "testthree": "mocha 'Test/thirdSuperTest.spec.js'",
-    "testfour": "mocha 'Test/forthSuperTest.spec.js'",
-    "testfive": "mocha 'Test/fifthServerTest.spec.js'",
-    "gettest1": "mocha Test/get_country_postal_code.spec.js",
-    "gettest2": "mocha Test/get_country_state_city.spec.js"
+    "training": "mocha 'Test/TrainingMochaTest'",
+    "gettest1": "mocha 'Test/GetTest/testResponse/testGetCountryPostalcode.spec.js'",
+    "gettest2": "mocha 'Test/GetTest/testResponse/testGetCountryStateCity.spec.js'"
   },
   "repository": {
     "type": "git",

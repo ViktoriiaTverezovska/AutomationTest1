@@ -1,0 +1,103 @@
+{
+    "variants": {
+        "Happy Path - 1": {
+            "message": "Verify response when user sends valid country & zip",
+            "uri": "/us/80222",
+            "responseCode": 200,
+            "response": {
+                "post code": "80222",
+                "country": "United States",
+                "country abbreviation": "US",
+                "places": [
+                    {
+                        "place name": "Denver",
+                        "longitude": "-104.9279",
+                        "state": "Colorado",
+                        "state abbreviation": "CO",
+                        "latitude": "39.671"
+                    }
+                ]
+            }
+        },
+        "Happy Path - 2": {
+            "message": "Verify response when user sends valid country & zip (lower edge)",
+            "uri": "/us/00210",
+            "responseCode": 200,
+            "response": {
+                "post code": "00210",
+                "country": "United States",
+                "country abbreviation": "US",
+                "places": [
+                    {
+                        "place name": "Portsmouth",
+                        "longitude": "-71.0132",
+                        "state": "New Hampshire",
+                        "state abbreviation": "NH",
+                        "latitude": "43.0059"
+                    }
+                ]
+            }
+        },
+        "Happy Path - 3": {
+            "message": "Verify response when user sends valid country & zip (upper edge)",
+            "uri": "/us/99950",
+            "responseCode": 200,
+            "response": {
+                "post code": "99950",
+                "country": "United States",
+                "country abbreviation": "US",
+                "places": [
+                    {
+                        "place name": "Ketchikan",
+                        "longitude": "-131.4327",
+                        "state": "Alaska",
+                        "state abbreviation": "AK",
+                        "latitude": "55.542"
+                    }
+                ]
+            }
+        },
+        "Negative Scenario - 1": {
+            "message": "Verify response when user sends valid country & invalid zip (less than lower edge)",
+            "uri": "/us/00209",
+            "responseCode": 404,
+            "response": {}
+        },
+        "Negative Scenario - 2": {
+            "message": "Verify response when user sends invalid country & invalid zip",
+            "uri": "/usa/99952",
+            "responseCode": 404,
+            "response": {}
+        },
+        "Negative Scenario - 3": {
+            "message": "Verify response when user sends invalid country & valid zip",
+            "uri": "/usa/80222",
+            "responseCode": 404,
+            "response": {}
+        },
+        "Negative Scenario - 4": {
+            "message": "Verify response when user sends valid country & valid zip code from another country",
+            "uri": "/au/80222",
+            "responseCode": 404,
+            "response": {}
+        },
+        "Negative Scenario - 5": {
+            "message": "Verify response when user sends valid country & invalid zip (more than upper edge)",
+            "uri": "/us/99951",
+            "responseCode": 404,
+            "response": {}
+        },
+        "Fail: Negative Scenario - 6": {
+            "message": "Verify response when user sends partially empty request (no postal code)",
+            "uri": "/us/",
+            "responseCode": 404,
+            "response": {}
+        },
+        "Fail: Negative Scenario - 7": {
+            "message": "Verify response when user sends partially empty request (no country)",
+            "uri": "/80222",
+            "responseCode": 404,
+            "response": {}
+        }
+    }
+}

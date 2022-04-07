@@ -29,5 +29,6 @@ describe('Mathematical Operation - Test Suite', function () {
         assert.equal(c,1);
     });
 
-    it('This is pending test')
+   // it('This is pending test') //This is to show that unfinished test will display as pending
+//I comment this bc of terminal 
 });
