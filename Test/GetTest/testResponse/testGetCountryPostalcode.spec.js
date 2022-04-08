@@ -1,7 +1,7 @@
-const testData = require('/Users/viktoriiatverezovska/Documents/GitHub/AutomationTest1/Test/GetTest/fixtures/getCountryPostalcodeTestData.json');
-const config = require('/Users/viktoriiatverezovska/Documents/GitHub/AutomationTest1/Test/GetTest/support/setUp.js');
-const commons = require('/Users/viktoriiatverezovska/Documents/GitHub/AutomationTest1/Test/GetTest/support/helpers.js');
-const status = require('/Users/viktoriiatverezovska/Documents/GitHub/AutomationTest1/Test/GetTest/support/statusCodes.js');
+const testData = require('../fixtures/getCountryPostalcodeTestData.json');
+const config = require('../support/setUp');
+const commons = require('../support/helpers');
+const status = require('../support/statusCodes');
 const expect = require('chai').expect; //chai assertion
 
 
