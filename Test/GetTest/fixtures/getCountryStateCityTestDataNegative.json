@@ -1,0 +1,79 @@
+{
+    "variants": {
+        "Negative Scenario - 1": {
+            "message": "Verify response when user sends request with valid country, state but invalid city",
+            "uri": "/us/co/cc",
+            
+            "response": {}
+        },
+        "Negative Scenario - 2": {
+            "message": "Verify response when user sends request with valid country, city but invalid state",
+            "uri": "/us/cc/miami",
+            
+            "response": {}
+        },
+        "Negative Scenario - 3": {
+            "message": "Verify response when user sends request with valid state, city but invalid country",
+            "uri": "/cc/co/denver",
+            
+            "response": {}
+        },
+        "Negative Scenario - 4": {
+            "message": "Verify response when user sends request with missing city",
+            "uri": "/us/co/",
+            
+            "response": {}
+        },
+        "Negative Scenario - 5": {
+            "message": "Verify response when user sends request with missing state & city",
+            "uri": "/us/",
+            
+            "response": {}
+        },
+        "Negative Scenario - 6": {
+            "message": "Verify response when user sends request with missing country",
+            "uri": "/co/denver",
+            
+            "response": {}
+        },
+        "Negative Scenario - 7": {
+            "message": "Verify response when user sends request with missing country & state",
+            "uri": "/denver",
+            
+            "response": {}
+        },
+        "Negative Scenario - 8": {
+            "message": "Verify response when user sends request with incorrect country",
+            "uri": "/au/co/denver",
+            
+            "response": {}
+        },
+
+        "Negative Scenario - 9": {
+            "message": "Verify response when user sends request with incorrect state",
+            "uri": "/us/ut/denver",
+            
+            "response": {}
+        },
+
+        "Negative Scenario - 10": {
+            "message": "Verify response when user sends request with incorrect city",
+            "uri": "/us/co/miami",
+            
+            "response": {}
+        },
+
+        "Negative Scenario - 11": {
+            "message": "Verify response when user sends request with incorrect parameters order",
+            "uri": "/denver/co/us",
+            
+            "response": {}
+        },
+        "Negative Scenario - 12": {
+            "message": "Verify response when user sends request with missing country & city",
+            "uri": "/co/",
+            
+            "response": {}
+        }
+    }
+}
