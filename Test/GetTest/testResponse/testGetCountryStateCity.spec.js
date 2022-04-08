@@ -11,7 +11,7 @@ describe('Testing GET request /country/state/city', () => {
         Object.entries(testDataPositive.variants).forEach(([variant, data]) => {
             it(variant + ": " + data.message + " " + data.uri, async () => {
                 const res = await commons.getRequest(config.baseUrl, data.uri)
-                expect(res.statusCode).to.be.equal(status.ok);
+                expect(res.statusCode).to.be.equal(status.responseCode.ok);
                 expect(res.body).to.be.deep.equal(data.response);
             })
         })
@@ -21,7 +21,7 @@ describe('Testing GET request /country/state/city', () => {
             Object.entries(testDataNegative.variants).forEach(([variant, data]) => {
                 it(variant + ": " + data.message + " " + data.uri, async () => {
                     const res = await commons.getRequest(config.baseUrl, data.uri)
-                    expect(res.statusCode).to.be.equal(status.notFound);
+                    expect(res.statusCode).to.be.equal(status.responseCode.notFound);
                     expect(res.body).to.be.deep.equal(data.response);
                 })
             })

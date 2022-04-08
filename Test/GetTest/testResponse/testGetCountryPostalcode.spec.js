@@ -12,10 +12,10 @@ describe('Testing GET request /country/postal-code', function () {
                 const res = await commons.getRequest(config.baseUrl, data.uri)
                 // expect(res.statusCode).to.be.equal(data.responseCode);
                 if (variant.includes("Happy")) {
-                    expect(res.statusCode).to.be.equal(status.ok);
+                    expect(res.statusCode).to.be.equal(status.responseCode.ok);
                 }
                 else {
-                    expect(res.statusCode).to.be.equal(status.notFound);
+                    expect(res.statusCode).to.be.equal(status.responseCode.notFound);
                 }
                 expect(res.body).to.be.deep.equal(data.response);
             })
